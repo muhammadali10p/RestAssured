@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.Console;
 import java.util.List;
 
-import static org.testng.AssertJUnit.assertNotNull;
+import static org.testng.Assert.assertNotNull;
 
 public class TestGetPerson {
 
@@ -26,7 +26,7 @@ public class TestGetPerson {
     public void GetaAllPerson()
     {
        List<Person> personList = personServiceHelper.getAllPersons();
-       assertNotNull(personList);
+       assertNotNull(personList, "Got the list of users");
     }
 
 
