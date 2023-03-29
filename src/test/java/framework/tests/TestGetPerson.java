@@ -12,16 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertNotNull;
 
-public class TestGetPerson {
-
-    private PersonServiceHelper personServiceHelper;
-
-    @BeforeClass
-    public void init()
-    {
-        personServiceHelper = new PersonServiceHelper();
-    }
-
+public class TestGetPerson extends BaseTest {
     @Test
     public void GetaAllPerson()
     {

@@ -7,14 +7,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertNotNull;
 
-public class TestPostPerson {
-
-    private PersonServiceHelper personServiceHelper;
-    @BeforeClass
-    public void init()
-    {
-        personServiceHelper = new PersonServiceHelper();
-    }
+public class TestPostPerson extends BaseTest {
 
     @Test
     public void createPerson()

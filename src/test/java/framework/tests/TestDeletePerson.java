@@ -7,16 +7,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertNotNull;
 
-public class TestDeletePerson {
-
-    private PersonServiceHelper personServiceHelper;
-
-    @BeforeClass
-    public void init()
-    {
-        personServiceHelper = new PersonServiceHelper();
-    }
-
+public class TestDeletePerson extends BaseTest {
     @Test
     public void updatePerson()
     {
