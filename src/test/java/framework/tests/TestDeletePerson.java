@@ -1,17 +1,24 @@
 package framework.tests;
 
+import com.aventstack.extentreports.Status;
 import io.restassured.response.Response;
-import org.api.helper.PersonServiceHelper;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertNotNull;
-
 public class TestDeletePerson extends BaseTest {
-    @Test
-    public void updatePerson()
+    @Test(priority=4)
+    public void deletePerson()
     {
-        Response response = personServiceHelper.deletePerson(1);
+        test = report.createTest("Delete person call");
+        try{
+            Response response = personServiceHelper.deletePerson(1);
+            test.log(Status.PASS, "Person deleted successfully");
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+            test.log(Status.FAIL, "Person could not be deleted");
+        }
+
 
     }
 

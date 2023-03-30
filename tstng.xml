@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Person API CRUD Suite" >
+    <test name="ToolsQA" >
+        <classes>
+            <class name="framework.tests.TestPostPerson" />
+            <class name="framework.tests.TestGetPerson" />
+            <class name="framework.tests.TestPostPerson" />
+            <class name="framework.tests.TestPatchPerson" />
+            <class name="framework.tests.TestDeletePerson" />
+        </classes>
+    </test>
+</suite>
+
+
+

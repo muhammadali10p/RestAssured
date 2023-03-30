@@ -41,12 +41,12 @@ public class PersonServiceHelper {
     public Response createPerson()
     {
         Person person = new Person();
-        person.setId(4);
+        person.setId(1);
         person.setAdress("Demo Adress");
         person.setAge(26);
-        person.setFirstname("Muhammad");
-        person.setLastname("Ali");
-        person.setPhonenumber("+923085246914");
+        person.setFirstname("Asad");
+        person.setLastname("Ullah");
+        person.setPhonenumber("+92308524");
 
         Response response = RestAssured.given().log().all()
                 .contentType(ContentType.JSON)
